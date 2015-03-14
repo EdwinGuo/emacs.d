@@ -1,6 +1,6 @@
 (require-package 'color-theme)
-(require-package 'color-theme-solarized)
+(require-package 'cyberpunk-theme)
 
 (color-theme-initialize)
-(load-theme 'solarized-light t)
+(load-theme 'cyberpunk t)
 (setq color-theme-is-global t)
