@@ -3,7 +3,7 @@
       auto-save-default nil
       visible-bell t
       uniquify-buffer-name-style 'forward)
-(global-hl-line-mode 1)
+;;(global-hl-line-mode 1)
 
 ;; Answering just 'y' or 'n' will do
 (defalias 'yes-or-no-p 'y-or-n-p)
