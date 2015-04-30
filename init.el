@@ -38,3 +38,26 @@
 ;; Run the emacs server
 (require 'server)
 (unless (server-running-p) (server-start))
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(custom-safe-themes
+   (quote
+    ("ddc7e17bff643175a692e20af11019f85f2565351b5b248506a128456e551e13" "cd540cb356cb169fa1493791bd4cbb183c5ad1c672b8d1be7b23e5e8c8178991" default)))
+ '(shell-pop-shell-type
+   (quote
+    ("eshell" "*eshell*"
+     (lambda nil
+       (eshell shell-pop-term-shell)))))
+ '(shell-pop-universal-key "M-`")
+ '(shell-pop-window-height 100)
+ '(shell-pop-window-position "top"))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(default ((t (:inherit nil :stipple nil :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 100 :width normal :foundry "apple" :family "Menlo"))))
+ '(emacs-lisp-mode-default ((t (:inherit autoface-default :height 100 :family "Menlo"))) t))
