@@ -8,9 +8,12 @@
 ;; Make sure path is correct when launched as application
 (setenv "PATH" (concat "/usr/local/bin:" (getenv "PATH")))
 (push "/usr/local/bin" exec-path)
+(push "/usr/local/Cellar/scala/2.11.1/bin" exec-path)
 
 ;; Add the top level emacs config directory to the load path
 (add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
+
+
 
 ;; Setup the package management
 (require 'init-packages)
