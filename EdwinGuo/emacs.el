@@ -4,6 +4,8 @@
 
 (setq debug-on-server t)
 (push "/usr/local/Cellar/scala/2.11.6/bin" exec-path)
+(add-to-list 'exec-path "/usr/local/sbin")
 (require 'ensime)
 (add-hook 'scala-mode-hook 'ensime-scala-mode-hook)
 (electric-pair-mode 1)
+(setq python-shell-interpreter "/Users/EdwinGuo/anaconda/bin/python")
